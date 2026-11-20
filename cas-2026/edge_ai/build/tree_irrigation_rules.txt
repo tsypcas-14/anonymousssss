@@ -1,0 +1,127 @@
+|--- water_dist <= 9.97
+|   |--- soil_raw <= 613.59
+|   |   |--- soil_raw <= 581.22
+|   |   |   |--- water_dist <= 9.73
+|   |   |   |   |--- soil_raw <= 559.05
+|   |   |   |   |   |--- water_dist <= 9.67
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- water_dist >  9.67
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |--- soil_raw >  559.05
+|   |   |   |   |   |--- light <= 30511.97
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- light >  30511.97
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |--- water_dist >  9.73
+|   |   |   |   |--- soil_raw <= 499.02
+|   |   |   |   |   |--- light <= 13653.78
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- light >  13653.78
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |--- soil_raw >  499.02
+|   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |--- soil_raw >  581.22
+|   |   |   |--- light <= 19950.08
+|   |   |   |   |--- air_hum <= 81.86
+|   |   |   |   |   |--- soil_raw <= 601.70
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- soil_raw >  601.70
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |--- air_hum >  81.86
+|   |   |   |   |   |--- air_hum <= 86.45
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- air_hum >  86.45
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |--- light >  19950.08
+|   |   |   |   |--- light <= 29181.23
+|   |   |   |   |   |--- air_temp <= 25.93
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- air_temp >  25.93
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |--- light >  29181.23
+|   |   |   |   |   |--- soil_raw <= 598.60
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |   |--- soil_raw >  598.60
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |--- soil_raw >  613.59
+|   |   |--- soil_raw <= 642.97
+|   |   |   |--- air_hum <= 83.40
+|   |   |   |   |--- soil_raw <= 616.45
+|   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |--- soil_raw >  616.45
+|   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |--- air_hum >  83.40
+|   |   |   |   |--- air_temp <= 20.59
+|   |   |   |   |   |--- soil_raw <= 630.80
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |   |--- soil_raw >  630.80
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |--- air_temp >  20.59
+|   |   |   |   |   |--- class: IRRIGATE
+|   |   |--- soil_raw >  642.97
+|   |   |   |--- water_dist <= 9.77
+|   |   |   |   |--- soil_raw <= 653.08
+|   |   |   |   |   |--- air_hum <= 86.76
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |   |--- air_hum >  86.76
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |--- soil_raw >  653.08
+|   |   |   |   |   |--- soil_raw <= 660.18
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |   |--- soil_raw >  660.18
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |--- water_dist >  9.77
+|   |   |   |   |--- light <= 6821.19
+|   |   |   |   |   |--- air_hum <= 89.41
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |   |--- air_hum >  89.41
+|   |   |   |   |   |   |--- class: IRRIGATE
+|   |   |   |   |--- light >  6821.19
+|   |   |   |   |   |--- class: IRRIGATE
+|--- water_dist >  9.97
+|   |--- water_dist <= 10.20
+|   |   |--- soil_raw <= 716.24
+|   |   |   |--- soil_raw <= 586.11
+|   |   |   |   |--- water_dist <= 10.05
+|   |   |   |   |   |--- air_hum <= 86.19
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |   |--- air_hum >  86.19
+|   |   |   |   |   |   |--- class: OFF
+|   |   |   |   |--- water_dist >  10.05
+|   |   |   |   |   |--- light <= 6853.49
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |   |--- light >  6853.49
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |--- soil_raw >  586.11
+|   |   |   |   |--- air_hum <= 78.58
+|   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |--- air_hum >  78.58
+|   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |--- soil_raw >  716.24
+|   |   |   |--- water_dist <= 10.06
+|   |   |   |   |--- class: IRRIGATE
+|   |   |   |--- water_dist >  10.06
+|   |   |   |   |--- air_hum <= 82.29
+|   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |--- air_hum >  82.29
+|   |   |   |   |   |--- class: REFILL_ALERT
+|   |--- water_dist >  10.20
+|   |   |--- water_dist <= 10.26
+|   |   |   |--- soil_raw <= 663.41
+|   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |--- soil_raw >  663.41
+|   |   |   |   |--- class: REFILL_ALERT
+|   |   |--- water_dist >  10.26
+|   |   |   |--- water_dist <= 10.45
+|   |   |   |   |--- soil_raw <= 487.66
+|   |   |   |   |   |--- air_temp <= 22.38
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |   |--- air_temp >  22.38
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |--- soil_raw >  487.66
+|   |   |   |   |   |--- soil_raw <= 786.26
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |   |   |--- soil_raw >  786.26
+|   |   |   |   |   |   |--- class: REFILL_ALERT
+|   |   |   |--- water_dist >  10.45
+|   |   |   |   |--- class: REFILL_ALERT

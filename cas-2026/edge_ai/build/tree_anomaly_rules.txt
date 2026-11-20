@@ -1,0 +1,13 @@
+|--- soil_std <= 19.68
+|   |--- soil_drop <= 94.78
+|   |   |--- water_drop_cm <= 0.52
+|   |   |   |--- class: POMPE_BLOQUEE
+|   |   |--- water_drop_cm >  0.52
+|   |   |   |--- soil_before <= 595.54
+|   |   |   |   |--- class: FUITE
+|   |   |   |--- soil_before >  595.54
+|   |   |   |   |--- class: FUITE
+|   |--- soil_drop >  94.78
+|   |   |--- class: NORMAL
+|--- soil_std >  19.68
+|   |--- class: CAPTEUR_DEFAILLANT

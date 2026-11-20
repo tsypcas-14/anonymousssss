@@ -1,0 +1,13 @@
+# Raspberry Pi 4 (Raspberry Pi OS 64-bit) - everything the Pi needs to run the farm
+#   sudo apt install -y python3-picamera2
+#   python3 -m venv --system-site-packages venv      (so the venv can see picamera2)
+#   venv/bin/pip install -r vision/requirements-pi.txt
+scikit-learn==1.6.1      # must match the version that trained models/modele_irrigation_tomate.joblib
+pandas
+joblib
+ultralytics
+ncnn
+fastapi
+uvicorn[standard]
+pyserial
+gpiozero

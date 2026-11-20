@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+pip_err.txt
+# Gros fichiers régénérables par les scripts
+vision/raw/
+vision/datasets/
+vision/runs/
+vision/captures/
+*.pt
+!vision/models/*.pt
+app/server/data/
+edge_ai/edge/logs/

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.env
+.env.*
+!.env.example
+# base SQLite locale (générée au démarrage)
+*.sqlite
+*.sqlite-journal
+*.db
+*.sqlite-wal
+*.sqlite-shm
+data/

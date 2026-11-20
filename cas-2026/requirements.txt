@@ -1,0 +1,19 @@
+# --- Modèle ML d'irrigation (Random Forest) ---
+numpy==2.1.3
+scipy==1.14.1
+pandas==2.2.3
+scikit-learn==1.6.1
+joblib
+matplotlib==3.9.2
+seaborn
+gdown
+
+# --- Vision (YOLO) ---
+# PC avec GPU NVIDIA RTX 50xx : installer torch AVANT, depuis l'index CUDA 12.8 :
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+ultralytics
+onnx
+
+# --- App (farm server + mobile web app) ---
+fastapi
+uvicorn[standard]

@@ -1,0 +1,44 @@
+name: smartfarm
+description: "SmartFarm: the greenhouse in your pocket. Talks only to the Raspberry Pi of the greenhouse (no cloud)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  web_socket_channel: ^3.0.1
+  shared_preferences: ^2.3.2
+  flutter_svg: ^2.0.10
+  url_launcher: ^6.3.0
+  webview_flutter: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Sora
+      fonts:
+        - asset: assets/fonts/sora-v17-latin-regular.ttf
+        - asset: assets/fonts/sora-v17-latin-600.ttf
+          weight: 600
+        - asset: assets/fonts/sora-v17-latin-700.ttf
+          weight: 700
+        - asset: assets/fonts/sora-v17-latin-800.ttf
+          weight: 800
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito-v32-latin-regular.ttf
+        - asset: assets/fonts/nunito-v32-latin-600.ttf
+          weight: 600
+        - asset: assets/fonts/nunito-v32-latin-700.ttf
+          weight: 700
+        - asset: assets/fonts/nunito-v32-latin-800.ttf
+          weight: 800

@@ -1,0 +1,7 @@
+# Raspberry Pi 3B: the agent + web app. No numpy, no scikit-learn, no PyTorch: the trees are plain Python.
+fastapi
+uvicorn
+pyserial
+RPi.GPIO
+adafruit-circuitpython-dht
+smbus2

@@ -1,0 +1,109 @@
+{
+  "tree_irrigation": {
+    "cv_mean": 0.9636,
+    "cv_std": 0.0028,
+    "test_accuracy": 0.9646,
+    "depth": 6,
+    "leaves": 43,
+    "labels": [
+      "IRRIGATE",
+      "OFF",
+      "REFILL_ALERT"
+    ],
+    "confusion_matrix": [
+      [
+        800,
+        29,
+        10
+      ],
+      [
+        18,
+        934,
+        15
+      ],
+      [
+        5,
+        8,
+        581
+      ]
+    ],
+    "feature_importance": {
+      "soil_raw": 0.464,
+      "air_temp": 0.002,
+      "air_hum": 0.016,
+      "light": 0.013,
+      "water_dist": 0.504
+    }
+  },
+  "tree_climate": {
+    "cv_mean": 0.9391,
+    "cv_std": 0.0042,
+    "test_accuracy": 0.9367,
+    "depth": 6,
+    "leaves": 53,
+    "labels": [
+      "FAN_OFF",
+      "FAN_ON"
+    ],
+    "confusion_matrix": [
+      [
+        1397,
+        87
+      ],
+      [
+        65,
+        851
+      ]
+    ],
+    "feature_importance": {
+      "air_temp": 0.279,
+      "air_hum": 0.688,
+      "light": 0.032
+    }
+  },
+  "tree_anomaly": {
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "test_accuracy": 1.0,
+    "depth": 4,
+    "leaves": 5,
+    "labels": [
+      "CAPTEUR_DEFAILLANT",
+      "FUITE",
+      "NORMAL",
+      "POMPE_BLOQUEE"
+    ],
+    "confusion_matrix": [
+      [
+        76,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        82,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        559,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        83
+      ]
+    ],
+    "feature_importance": {
+      "soil_before": 0.0,
+      "soil_drop": 0.333,
+      "water_drop_cm": 0.333,
+      "soil_std": 0.333
+    }
+  }
+}

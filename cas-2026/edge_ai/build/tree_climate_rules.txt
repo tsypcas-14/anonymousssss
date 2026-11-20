@@ -1,0 +1,157 @@
+|--- air_hum <= 90.15
+|   |--- air_temp <= 28.65
+|   |   |--- air_hum <= 87.81
+|   |   |   |--- air_temp <= 27.38
+|   |   |   |   |--- air_hum <= 86.76
+|   |   |   |   |   |--- air_temp <= 27.04
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_temp >  27.04
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |--- air_hum >  86.76
+|   |   |   |   |   |--- light <= 1025.10
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- light >  1025.10
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |--- air_temp >  27.38
+|   |   |   |   |--- light <= 29476.48
+|   |   |   |   |   |--- air_hum <= 78.91
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_hum >  78.91
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  29476.48
+|   |   |   |   |   |--- air_temp <= 27.99
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  27.99
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |--- air_hum >  87.81
+|   |   |   |--- air_hum <= 89.44
+|   |   |   |   |--- air_hum <= 88.26
+|   |   |   |   |   |--- air_hum <= 87.91
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_hum >  87.91
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |--- air_hum >  88.26
+|   |   |   |   |   |--- air_hum <= 88.35
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_hum >  88.35
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |--- air_hum >  89.44
+|   |   |   |   |--- light <= 19.91
+|   |   |   |   |   |--- air_hum <= 89.78
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_hum >  89.78
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  19.91
+|   |   |   |   |   |--- air_hum <= 89.81
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_hum >  89.81
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |--- air_temp >  28.65
+|   |   |--- air_temp <= 30.18
+|   |   |   |--- light <= 29292.18
+|   |   |   |   |--- air_hum <= 79.29
+|   |   |   |   |   |--- air_temp <= 29.60
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- air_temp >  29.60
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |--- air_hum >  79.29
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |--- light >  29292.18
+|   |   |   |   |--- light <= 31046.99
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  31046.99
+|   |   |   |   |   |--- light <= 48322.84
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- light >  48322.84
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |--- air_temp >  30.18
+|   |   |   |--- air_temp <= 30.63
+|   |   |   |   |--- light <= 28855.66
+|   |   |   |   |   |--- air_temp <= 30.41
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  30.41
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  28855.66
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |--- air_temp >  30.63
+|   |   |   |   |--- light <= 10121.76
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  10121.76
+|   |   |   |   |   |--- class: FAN_ON
+|--- air_hum >  90.15
+|   |--- air_hum <= 92.10
+|   |   |--- air_temp <= 18.31
+|   |   |   |--- air_hum <= 90.63
+|   |   |   |   |--- air_hum <= 90.35
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- air_hum >  90.35
+|   |   |   |   |   |--- light <= 23.41
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- light >  23.41
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |--- air_hum >  90.63
+|   |   |   |   |--- light <= 10.66
+|   |   |   |   |   |--- light <= 3.85
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- light >  3.85
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  10.66
+|   |   |   |   |   |--- air_temp <= 16.52
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  16.52
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |--- air_temp >  18.31
+|   |   |   |--- air_hum <= 90.80
+|   |   |   |   |--- light <= 26.78
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  26.78
+|   |   |   |   |   |--- light <= 11330.95
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |   |   |--- light >  11330.95
+|   |   |   |   |   |   |--- class: FAN_OFF
+|   |   |   |--- air_hum >  90.80
+|   |   |   |   |--- light <= 12638.22
+|   |   |   |   |   |--- air_temp <= 21.85
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  21.85
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  12638.22
+|   |   |   |   |   |--- class: FAN_ON
+|   |--- air_hum >  92.10
+|   |   |--- air_hum <= 93.26
+|   |   |   |--- air_temp <= 20.31
+|   |   |   |   |--- air_hum <= 92.70
+|   |   |   |   |   |--- air_hum <= 92.47
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_hum >  92.47
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- air_hum >  92.70
+|   |   |   |   |   |--- air_hum <= 92.90
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_hum >  92.90
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |--- air_temp >  20.31
+|   |   |   |   |--- air_temp <= 21.94
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- air_temp >  21.94
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |--- air_hum >  93.26
+|   |   |   |--- air_hum <= 94.24
+|   |   |   |   |--- air_temp <= 16.71
+|   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- air_temp >  16.71
+|   |   |   |   |   |--- air_temp <= 19.61
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  19.61
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |--- air_hum >  94.24
+|   |   |   |   |--- light <= 1.35
+|   |   |   |   |   |--- light <= 0.81
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- light >  0.81
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |--- light >  1.35
+|   |   |   |   |   |--- air_temp <= 24.56
+|   |   |   |   |   |   |--- class: FAN_ON
+|   |   |   |   |   |--- air_temp >  24.56
+|   |   |   |   |   |   |--- class: FAN_ON

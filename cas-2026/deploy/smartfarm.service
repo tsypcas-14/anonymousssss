@@ -1,0 +1,20 @@
+# systemd unit for the Raspberry Pi 3B. deploy/install_pi.sh fills in the __PLACEHOLDERS__ and installs it.
+# Logs:  journalctl -u smartfarm -f
+[Unit]
+Description=SmartFarm AI: autonomous greenhouse agent (3 decision trees, local) + web app
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=__USER__
+WorkingDirectory=__DIR__
+Environment=SMARTFARM_MODE=real
+Environment=PYTHONUNBUFFERED=1
+# Day the tomatoes were transplanted (plant age shown in the app)
+Environment=SMARTFARM_TRANSPLANT_DATE=__DATE__
+ExecStart=__DIR__/venv/bin/python -m uvicorn app.server.main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
